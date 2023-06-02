@@ -1,0 +1,11 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+# all file paths are relative to the root
+
+format: jb-book
+root: README 
+parts:
+  - caption: Code
+    chapters:
+    - file: api
+    - file: api_analysis_params

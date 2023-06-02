@@ -1,0 +1,116 @@
+:root {
+  --sd-color-primary: #9f0000;
+}
+
+#contents {
+  background-color: #fcfae1;
+}
+.content-container a {
+  color: #e47d00;
+}
+
+
+a {
+  color: #e47d00;
+}
+
+a.reference.internal:visited {
+  color: #e5a504;
+}
+
+a:hover {
+  color: #e5a504;
+}
+
+
+
+div.topic {
+  border: 0px;
+}
+
+/* header */
+.header-item.announcement {
+  background-color: #d53c00;
+  color: yellow;
+}
+
+*, :after, :before {
+  color: #d53c00;
+  box-sizing: border-box;
+}
+
+/* glossary for commands */
+.cmdglossary {
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'Courier New', monospace;
+}
+
+/* Article Styles */
+img.sd-avatar-sm-custom{
+  border-radius: 40%;
+  object-fit: contain;
+  object-position: center;
+  width: 10rem;
+  height: 6rem;
+  padding: 5px;
+}
+
+img.snail-article-avatar {
+  border-radius: 50%;
+  object-fit: fill;
+  object-position: center;
+  width: 10rem;
+  height: 10rem;
+  padding: 0px;
+}
+
+/* Left Sidebar/Nav */
+li .toctree-l2 {
+  font-weight: 400;
+}
+
+ul.nav.bd-sidenav {
+  color:   #d53c00;
+}
+
+nav.bd-links p.caption {
+  color:   #d53c00;
+}
+
+i.fas.fa-chevron-down {
+  color:  #d53c00;
+  font-weight: 700;
+}
+
+nav.bd-links .toctree-l1 {
+  font-size: var(--pst-sidebar-caption-font-size);
+  /*text-transform: uppercase;*/
+  font-weight: 600;
+  position: relative;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  /*padding: 0 1.5rem;*/ 
+  color: rgba(var(--pst-color-sidebar-caption),1);
+}
+
+/* -- Newsletter page, id #newsletter is from the 'section' tag -- */
+/* -- It's all on one page to avoid having to add new styling rules for each issue as the #newsletter id is dependent on the page title. -- */
+
+/* To make the picture sit directly beneath the article box */
+div.newsletter-article-container {
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+}
+
+/* To make contents table normal sized */
+#newsletter #contents {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/* h2 is for the contents table, actual title is the article box */
+#newsletter h2 {
+  font-weight: 200;
+  font-size: small;
+}

@@ -1,0 +1,11 @@
+default:
+  basepaths:
+    basepath_binac: ''
+    basepath_bioq: ''
+    basepath_local: ./
+    localdir: ''
+    storagedir: ''
+other: {}
+proj_details:
+  proj_id: MBEN_T
+  version: v00

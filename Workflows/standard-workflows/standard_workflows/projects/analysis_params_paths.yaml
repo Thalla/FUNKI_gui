@@ -1,0 +1,32 @@
+dataset_params:
+  human:
+    atac:
+      all_cnvsNormal:
+        paths:
+          data_root_filename: all_cnvsNormal_atac.h5ad
+      all_cnvsNormal_2:
+        paths:
+          data_root_path: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects
+      replacements:
+        paths:
+          data_root_path: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/example_data
+    replacements:
+      use_pickle_data: 'false'
+    sn:
+      all_cnvsNormal: {}
+      priorKnowledge:
+        dorothea:
+          levels:
+          - - A
+            - B
+            - C
+  mouse:
+    atac: {}
+    visium: {}
+proj_params:
+  paths:
+    analysis_path: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects
+    data_root_path: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/example_data/<default>
+  proj_id: MBEN_T
+  use_pickle_data: 'true'
+  version: v00

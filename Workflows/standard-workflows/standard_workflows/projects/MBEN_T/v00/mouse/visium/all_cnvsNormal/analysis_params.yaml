@@ -1,0 +1,21 @@
+name: all_cnvsNormal
+organism: mouse
+paths:
+  analysis_path: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects
+  data_root_filename: all_cnvsNormal.h5ad
+  data_root_path: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/example_data
+  datafilepath: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/example_data/MBEN_T/v00/mouse/visium/all_cnvsNormal/data/all_cnvsNormal.h5ad
+  datafilepath_tmp: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects/MBEN_T/v00/mouse/visium/all_cnvsNormal/data/all_cnvsNormal.pickle
+  datapath: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/example_data/MBEN_T/v00/mouse/visium/all_cnvsNormal/data
+  datapath_tmp: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects/MBEN_T/v00/mouse/visium/all_cnvsNormal/data
+  datasetpath: MBEN_T/v00/mouse/visium/all_cnvsNormal
+  figpath: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects/MBEN_T/v00/mouse/visium/all_cnvsNormal/figures
+  logpath: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects/MBEN_T/v00/mouse/visium/all_cnvsNormal/log
+  priorknowledge: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/example_data/MBEN_T/v00/mouse/visium/all_cnvsNormal/data/priorKnowledge
+  priorknowledge_tmp: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects/MBEN_T/v00/mouse/visium/all_cnvsNormal/data/priorKnowledge
+  resultpath: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects/MBEN_T/v00/mouse/visium/all_cnvsNormal/results
+  subsetspath: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects/MBEN_T/v00/mouse/visium/all_cnvsNormal/subsets
+proj_id: MBEN_T
+seq_type: visium
+use_pickle_data: 'true'
+version: v00

@@ -1,0 +1,30 @@
+proj_params:
+  proj_id: MBEN_T
+  version: v00
+  paths:
+    analysis_path: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects
+    data_root_path: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/example_data/<default>
+  use_pickle_data: true
+dataset_params:
+  human:
+    sn:
+      priorKnowledge:
+        dorothea:
+          levels:
+          - !!python/tuple
+            - A
+            - B
+            - C
+      all_cnvsNormal: {}
+    replacements:
+      use_pickle_data: false
+    atac:
+      all_cnvsNormal_2:
+        paths:
+          data_root_path: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects
+      replacements:
+        paths:
+          data_root_path: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/example_data
+      all_cnvsNormal:
+        paths:
+          data_root_filename: all_cnvsNormal_atac.h5ad

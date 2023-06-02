@@ -1,0 +1,21 @@
+name: all_cnvsNormal_2
+organism: mouse
+paths:
+  analysis_path: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects
+  data_root_filename: all_cnvsNormal_2.h5ad
+  data_root_path: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/example_data
+  datafilepath: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/example_data/MBEN_T/v00/mouse/atac/all_cnvsNormal_2/data/all_cnvsNormal_2.h5ad
+  datafilepath_tmp: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects/MBEN_T/v00/mouse/atac/all_cnvsNormal_2/data/all_cnvsNormal_2.pickle
+  datapath: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/example_data/MBEN_T/v00/mouse/atac/all_cnvsNormal_2/data
+  datapath_tmp: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects/MBEN_T/v00/mouse/atac/all_cnvsNormal_2/data
+  datasetpath: MBEN_T/v00/mouse/atac/all_cnvsNormal_2
+  figpath: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects/MBEN_T/v00/mouse/atac/all_cnvsNormal_2/figures
+  logpath: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects/MBEN_T/v00/mouse/atac/all_cnvsNormal_2/log
+  priorknowledge: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/example_data/MBEN_T/v00/mouse/atac/all_cnvsNormal_2/data/priorKnowledge
+  priorknowledge_tmp: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects/MBEN_T/v00/mouse/atac/all_cnvsNormal_2/data/priorKnowledge
+  resultpath: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects/MBEN_T/v00/mouse/atac/all_cnvsNormal_2/results
+  subsetspath: /Users/hanna/Documents/projects/Workflows/standard-workflows/standard_workflows/projects/MBEN_T/v00/mouse/atac/all_cnvsNormal_2/subsets
+proj_id: MBEN_T
+seq_type: atac
+use_pickle_data: 'true'
+version: v00

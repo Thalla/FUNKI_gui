@@ -1,0 +1,98 @@
+{
+  "default": {
+    "basepaths": {
+      "basepath_local": "/Users/hanna/Documents/",
+      "basepath_bioq": "/net/data.isilon/ag-saez/$USER/",
+      "basepath_binac": "",
+      "storagedir": "mounted",
+      "localdir": ""
+    },
+    "original_type": "SeuratObj",
+    "rename": {"clusters": "seurat_clusters", "subj_id": "PID"},
+    "priorKnowledge": {"dorothea": {"levels": [["A", "B", "C"]]}},
+    "decoupler": {
+      "methods": [["mlm"]],
+      "meanacts": {"groupby": ["vars"], "minstd": 0},
+      "pseudobulk": {
+        "contrast": [["seurat_clusters", "CNVs", "Tumor", "Normal"]],
+        "sumon": [["PID_CNVs", "seurat_clusters"]],
+        "test": ["t-test"]
+      }
+    },
+    "liana": {
+      "methods": [["natmi", "connectome", "logfc", "sca", "cellphonedb"]],
+      "base": "exp(1)",
+      "lig_rec": [[4, [3, 1, 2, 0]], ["all"]]
+    }
+  },
+  "other": {
+    "all": {
+      "original_name": "MB_all_f",
+      "obs_of_interest": ["seurat_clusters", "CNVs"],
+      "rename": {"is_control": "CNVs"},
+      "subs": {
+        "seurat_clusters": ["clust", [5, 6, 7]],
+        "CNVs": ["cnvs", ["Normal"]]
+      },
+      "comps": {"is_control": ["Tumor", "Normal"]},
+      "liana": {"lig_rec": [["all"]]},
+      "priorKnowledge": {"dorothea": {}}
+    },
+    "all_cnvsNormal": {"liana": {"lig_rec": [["all"]]}},
+    "all_t": {
+      "original_name": "MB_all_t",
+      "obs_of_interest": ["seurat_clusters", "labels"],
+      "subs": {
+        "seurat_clusters": ["clust", [4, 3, 1, 0, 2], [4, 2], [4, 1], [4, 0]],
+        "PID": [
+          "subj",
+          ["AK1"],
+          ["AK2"],
+          ["AK3"],
+          ["MB263"],
+          ["MB266"],
+          ["MB287"],
+          ["MB295"],
+          ["MB299"],
+          ["MB88"]
+        ]
+      },
+      "comps": {"clusters": [[4, [3, 1]], [4, 3], [3, 1], [1, 2], [2, 0]]},
+      "decoupler": {},
+      "priorKnowledge": {"dorothea": {}}
+    },
+    "all_t_clust43": {
+      "subs": {
+        "PID": [
+          "subj",
+          ["AK1"],
+          ["AK2"],
+          ["AK3"],
+          ["MB263"],
+          ["MB266"],
+          ["MB287"],
+          ["MB295"],
+          ["MB299"],
+          ["MB88"]
+        ]
+      }
+    },
+    "all_t_clust43102": {
+      "subs": {
+        "PID": [
+          "subj",
+          ["AK1"],
+          ["AK2"],
+          ["AK3"],
+          ["MB263"],
+          ["MB266"],
+          ["MB287"],
+          ["MB295"],
+          ["MB299"],
+          ["MB88"]
+        ]
+      },
+      "liana": {"lig_rec": [[4, [3, 1, 2, 0]], ["all"]]}
+    }
+  }
+}

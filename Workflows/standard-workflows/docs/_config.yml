@@ -1,0 +1,98 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: Workflows
+author: Hanna Schumacher
+logo: Images/dragonfly.jpeg
+
+# Force: force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: cache # force, cache, ...
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/executablebooks/jupyter-book  # Online location of your book
+  path_to_book: docs  # Optional path to your book, relative to the repository root
+  branch: master  # Which branch of the repository should be used when creating links (optional)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: true
+  use_repository_button: true
+  announcement: <div style="font-weight:400;font-size:12pm;color:yellow;">Planned Task - Implement a simple GUI with 'Panel'.</div>
+
+only_build_toc_files: false
+
+extra_extensions:
+  - sphinx_toolbox.collapse,
+  - sphinxcontrib.plantuml
+
+sphinx:
+  extra_extensions:
+    - sphinx.ext.viewcode
+    - sphinx.ext.napoleon # for when the docstrings are in google style or numpy style
+    - sphinx.ext.doctest # to make autodoc recognize tests in docstrings
+    - sphinx.ext.autodoc # Core library for html generation from docstrings
+    - sphinx.ext.autosummary # Create neat summary tables
+    - sphinx.ext.autosectionlabel
+    - sphinx.ext.intersphinx # be able lo link online Sphinx documents
+    - sphinx.ext.duration # measures durations of Sphinx processing and show its result at end of the build
+    - sphinxcontrib.mermaid # enable mermaid diagrams in markdown files
+#    - sphinx_toolbox.more_autodoc.variables
+#    - autoapi.extension # alternative to autosummary, creates docs in build folder
+  config:
+    nb_custom_formats:
+      .Rmd:
+        - jupytext.reads
+        - fmt: Rmd
+    autosummary_generate: True
+    autosummary_imported_members: True
+    autoclass_content: 'both'
+    autodoc_typehints: 'both'
+    autodoc_typehints_description_target: 'documented'
+    autodoc_typehints_format: 'short'
+    autodoc_member_order: 'bysource'
+#    autoapi_type : 'python'
+#    autoapi_dirs : ['./../standard_workflows']
+    intersphinx_mapping:
+      python:
+        - "https://docs.python.org/3"
+        - null
+      numpy:
+        - "https://numpy.org/doc/stable/"
+        - null
+
+intersphinx_mapping:
+    'python': ('https://docs.python.org/3/', None)
+    'sphinx': ('https://www.sphinx-doc.org/en/master/', None)
+
+intersphinx_disabled_domains: ['std']
+
+myst_enable_extensions: # all
+    - "amsmath"
+    - "colon_fence"
+    - "deflist"
+    - "dollarmath"
+    - "fieldlist"
+    - "html_admonition"
+    - "html_image"
+    - "linkify"
+    - "replacements"
+    - "smartquotes"
+    - "strikethrough"
+    - "substitution"
+    - "tasklist"
+
+plantuml: 
+  java -jar /usr/local/bin/plantuml.jar

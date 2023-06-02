@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "docs"
+version = "0.1.0"
+description = ""
+authors = ["Thalla <Temerita16@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<4.0"
+jupyter-book = "^0.13.1"
+jupytext = "^1.14.1"
+standard-workflows = {path = "../../standard-workflows"}
+matplotlib = "^3.6.1"
+numpy = "^1.23.4"
+igraph = "^0.10.2"
+louvain = "^0.8.0"
+dill = "^0.3.6"
+mergedeep = "^1.3.4"
+pycco = "^0.6.0"
+nb-js-diagrammers = "0.0.7"
+pip = "^22.3"
+sphinx-autoapi = "^2.0.0"
+sphinx-toolbox = "^3.2.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.17.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
